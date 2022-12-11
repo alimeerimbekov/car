@@ -1,0 +1,58 @@
+.infoHome {
+  background: #F5F5F9;
+  padding-top: 81px;
+  padding-bottom: 87px;
+
+
+
+  &__title {
+    @include text(900, 30px, 40px, $black);
+    width: calc(80%);
+
+    &-blue {
+      color: $blue;
+    }
+  }
+
+  &__desc {
+    @include text(400, 18px, 40px, $black);
+    padding: 28px 0 48px;
+    width: calc(70%);
+
+
+  }
+
+  &__tit {
+    @include text(900, 20px, 36px, $black);
+  }
+
+  &__des {
+    @include text(400, 16px, 30px, $gray);
+    padding-bottom: 40px;
+  }
+
+  &__cards {
+    display: flex;
+    gap: 17px 25px;
+  }
+
+  &__card {
+    background: #fff;
+    border: 1px solid $blue;
+    width: calc(20% - 8.5px);
+    text-align: center;
+    padding: 58px 0 42px;
+
+    &-title {
+      @include text(700, 18px, 36px, $black);
+    }
+    &-title:nth-child(4) {
+      $lh: 0;
+    }
+
+
+    &-desc {
+      @include text(400, 18px, 30px, $black);
+    }
+  }
+}

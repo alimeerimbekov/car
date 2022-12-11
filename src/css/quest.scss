@@ -1,0 +1,86 @@
+.quest {
+  background: #F5F5F9;
+  padding: 54px 0 0;
+  margin-top: 100px;
+
+  &__block {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__box {
+    width: calc(50% - 150px);
+  }
+
+  &__title {
+    @include text(900, 36px, 46px, $black);
+
+    &-blue {
+      color: $blue;
+    }
+  }
+
+  &__desc {
+    @include text(400, 18px, 36px, $black);
+    padding: 29px 0 11px;
+
+    &-text {
+      @include text(800, 20px, 36px, $black);
+    }
+  }
+
+  &__tel {
+    @include text(900, 24px, 45px, $blue);
+    padding-bottom: 57px;
+  }
+
+  &__form {
+    &-inputs {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &-input {
+      background: rgba(255, 255, 255, 0.62);
+      border: 1px solid #E5E5E5;
+      border-radius: 5px;
+      @include text(400, 16px, 26px, $black);
+      padding: 14px 0 17px 28px;
+      width: 100%;
+      margin-bottom: 30px;
+    }
+
+    &-textarea {
+      background: rgba(255, 255, 255, 0.62);
+      border: 1px solid #E5E5E5;
+      border-radius: 5px;
+      @include text(400, 16px, 26px, $black);
+      padding: 14px 0 17px 28px;
+      width: 100%;
+      resize: none;
+    }
+
+    &-btns {
+      display: flex;
+      padding: 24px 0;
+      &-text {
+        @include text(400, 16px, 24px, $black);
+        padding: 24px 0 72px;
+        width: calc(50% - 5px);
+      }
+
+      &-btn {
+        width: calc(50% - 5px);
+        @include text(700, 16px, 26px, #fff);
+        letter-spacing: 0.05em;
+        padding: 15px 0 19px;
+        background: $blue;
+        border-radius: 5px;
+        border: none;
+      }
+    }
+
+
+  }
+
+}

@@ -1,0 +1,80 @@
+.footer {
+  padding: 70px 0;
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__box {
+    width: calc(33.33333% - 20px);
+
+    &-add {
+      @include text(400, 14px, 28px, $black);
+
+      &-desc {
+        &-blue {
+          color: $blue;
+        }
+      }
+
+      &-tel {
+        @include text(900, 18px, 45px, $black);
+      }
+    }
+
+    &-title {
+      @include text(700, 14px, 28px, $black);
+    }
+
+    &-list {
+      &-price {
+        @include text(400, 14px, 28px, $black);
+      }
+
+      &-bold {
+        @include text(700, 14px, 28px, $black);
+
+      }
+    }
+  }
+
+  &__link {
+    display: flex;
+    padding: 32px 0 41px;
+    justify-content: space-between;
+
+    &-icons {
+      display: flex;
+      column-gap: 10px;
+    }
+
+    &-icon {
+      background: #F5F5F9;
+      border-radius: 5px;
+      width: 55px;
+      height: 55px;
+      padding: 14px 19px;
+    }
+
+    &-list {
+      display: flex;
+      column-gap: 75px;
+      align-items: center;
+      text-decoration: underline;
+    }
+  }
+
+}
+
+.subfooter {
+  background: $black;
+  &__line {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0 12px;
+    &-desc {
+      @include text(400, 14px, 28px, #FCEC4F);
+    }
+  }
+}

@@ -1,0 +1,43 @@
+.statsHome {
+  padding: 86px 0 105px;
+  &__block {
+    display: flex;
+    column-gap: 80px;
+  }
+  &__box {
+    width: calc(50% - 40px);
+    &-title {
+      @include text(900, 30px, 40px, $black);
+    }
+    &-blue {
+      @include text(900, 25px, 40px, $blue);
+      padding-top: 15px;
+    }
+    &-desc {
+      @include text(500, 18px, 40px, #000);
+      margin: 20px 0 30px;
+    }
+  }
+  &__oppoBox {
+    border: 1px solid $blue;
+    background: #F5F5F9;
+    border-radius: 5px;
+    padding: 51px 0 64px 61px;
+  }
+  &__oppo {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 100px;
+    &-list {
+      width: calc(50% - 50px);
+      @include text(700, 18px, 28px, $black);
+      &-icon {
+        margin-left: -40px;
+        margin-right: 10px;
+      }
+      &-blue {
+        color: $blue;
+      }
+    }
+  }
+}

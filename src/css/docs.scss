@@ -1,0 +1,28 @@
+.docs {
+  padding: 85px 0 65px;
+   &__title {
+     @include text(900, 30px, 45px, $black);
+     margin-bottom: 65px;
+   }
+
+  &__cards {
+    display: flex;
+    column-gap: 30px;
+    &-card {
+      width: calc(33.33333% - 15px);
+      background: $black;
+      border-radius: 5px;
+      position: relative;
+      &-icon {
+        position: absolute;
+        left: -10%;
+        top: -30%;
+      }
+      &-text {
+        @include text(700, 24px, 30px, #fff);
+        text-align: right;
+        padding: 48px 124px 46px 0;
+      }
+    }
+  }
+}

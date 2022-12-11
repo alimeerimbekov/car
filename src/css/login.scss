@@ -1,0 +1,34 @@
+.login {
+  padding: 79px 0 99px;
+  text-align: center;
+  &__title{
+     @include text(900, 30px, 46px, $black);
+     margin: 79px 0 12px;
+  }
+  &__subtitle {
+    @include text(400, 16px, 26px, $black);
+    margin-bottom: 36px;
+  }
+  &__form {
+    text-align: center;
+    display: flex;
+    &-input {
+      padding: 16px 0 16px 20px;
+      width: 50%;
+      margin: 20px;
+      @include text(400, 14px, 26px, $gray);
+      border-radius: 10px;
+      border: 2px solid #E5E5E5;
+    }
+    &-btn {
+      @include text(700, 18px, 26px, #fff);
+      border-radius: 10px;
+      border: 2px solid $blue;
+      width: 50%;
+      background: $blue;
+      padding: 15px 0 19px;
+      margin: 32px 0 100px;
+    }
+  }
+
+}

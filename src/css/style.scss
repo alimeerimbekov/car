@@ -1,0 +1,50 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: 'Gilroy', sans-serif;
+  font-style: normal;
+}
+
+.container {
+  max-width: 1240px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+$black: #242321;
+$gray: #989898;
+$blue: #0088CF;
+
+@mixin text($fw, $fz, $lh, $col) {
+
+  font-weight: $fw;
+  font-size: $fz;
+  @if $lh > 0 {
+    line-height: $lh;
+  }
+  color: $col;
+}
+
+
+
+
+@import "header";
+@import "home";
+@import "info";
+@import "sentence";
+@import "benefits";
+@import "docs";
+@import "catalog";
+@import "steps";
+@import "rent";
+@import "quest";
+@import "footer";
+@import "rentHome";
+@import "infoHome";
+@import "statsHome";
+@import "what";
+@import "login";
+@import "dHome";

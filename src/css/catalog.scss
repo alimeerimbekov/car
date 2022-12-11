@@ -1,0 +1,82 @@
+.catalog {
+  padding: 104px;
+  position: relative;
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    @include text(900, 30px, 45px, $black);
+  }
+
+  &__btn {
+    @include text(700, 16px, 0, #fff);
+    letter-spacing: 0.05em;
+    padding: 15px 20px 19px;
+    background: $blue;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+  }
+
+
+
+  &__cards {
+    display: flex;
+    column-gap: 20px;
+    margin-top: 47px;
+
+    &-card {
+      width: calc(33.33333% - 10px);
+      border: 1px solid #E5E5E5;
+
+      &-img {
+        width: 100%;
+      }
+
+      &-link {
+        @include text(500, 18px, 30px, $blue);
+        padding-left: 19px;
+      }
+
+      &-title {
+        @include text(900, 20px, 30px, $black);
+        padding: 14px 0 0 20px;
+      }
+
+      &-desc {
+        @include text(500, 16px, 30px, $black);
+        padding: 6px 0 10px 20px;
+
+      }
+
+      &-price {
+        display: flex;
+        justify-content: space-between;
+        @include text(500, 16px, 30px, $black);
+        padding: 0 20px;
+
+        &-priceList {
+          @include text(700, 16px, 30px, $black);
+        }
+      }
+
+      &-btn {
+        @include text(700, 18px, 0, #fff);
+        background: $blue;
+        border-radius: 5px;
+        padding: 20px 73px 24px 80px;
+        width: 100%;
+        border: none;
+        margin-top: 37px;
+      }
+
+    }
+  }
+
+}
+
+

@@ -1,0 +1,31 @@
+.rent {
+  &__title {
+    @include text(900, 30px, 46px, $black);
+    padding: 112px 0 45px;
+
+    &-blue {
+      color: $blue;
+    }
+  }
+
+  &__box {
+    background: #F5F5F9;
+    border: 1px solid #0088CF;
+    border-radius: 5px;
+    display: flex;
+    gap: 30px 120px;
+    padding: 42px 101px 40px 61px ;
+    &-listen {
+      @include text(700, 18px, 36px, $black);
+      position: relative;
+
+      &-blue {
+        color: $blue;
+      }
+      &-icon {
+        position: absolute;
+        left: -10%;
+      }
+    }
+  }
+}

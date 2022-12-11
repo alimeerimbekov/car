@@ -1,0 +1,58 @@
+.benefits {
+  padding: 82px 0 45px;
+
+  &__title {
+    @include text(900, 30px, 46px, $black);
+
+    &-blue {
+      color: $blue;
+    }
+  }
+
+  &__stat {
+    display: flex;
+    column-gap: 200px;
+    border: 2px solid black;
+    background: #F5F5F9;
+    padding: 15px 65px;
+    margin: 45px 0 59px;
+    &-desc {
+      @include text(700, 18px, 36px, $black);
+      position: relative;
+
+      &-blue {
+        color: $blue;
+      }
+
+      &-icon {
+        position: absolute;
+        left: 0;
+        top: 10%;
+        transform: translateX(-40px);
+      }
+    }
+  }
+
+  &__cards {
+    display: flex;
+    column-gap: 135px;
+    margin-bottom: 31px;
+    &-card {
+      width: calc(33.33333% - 20px);
+      position: relative;
+      padding-left: 50px;
+      &-icon {
+        position: absolute;
+        left: 0;
+        top: 0;
+
+      }
+      &-title {
+        @include text(700, 20px, 30px, $black);
+      }
+      &-desc {
+        @include text(400, 18px, 28px, $black);
+      }
+    }
+  }
+}

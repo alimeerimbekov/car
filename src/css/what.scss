@@ -1,0 +1,20 @@
+.what {
+  padding:84px 0 71px;
+
+  &__title {
+    @include text(900, 40px, 45px, $black);
+  }
+
+  &__cards {
+    display: flex;
+    column-gap: 40px;
+    flex-wrap: wrap;
+  }
+
+  &__card {
+    width: calc(33.33333% - 10px);
+    &-desc {
+      @include text(700, 16px, 30px, $black);
+    }
+  }
+}

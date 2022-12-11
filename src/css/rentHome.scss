@@ -1,0 +1,115 @@
+.rentHome {
+  margin-bottom: 96px;
+  &__title {
+    @include text(900, 30px, 40px, $black);
+    margin-top: 122px;
+
+    &-blue {
+      color: $blue;
+    }
+  }
+
+  &__desc {
+    @include text(500, 18px, 28px, $black);
+    margin: 20px 0 52px;
+  }
+
+  &__cards {
+    display: flex;
+    column-gap: 30px;
+  }
+
+  &__card {
+    width: calc(25% - 15px);
+    position: relative;
+    padding-left: 50px;
+
+    &-title {
+      @include text(700, 20px, 28px, $black);
+      z-index: 2;
+    }
+
+    &-text {
+      @include text(400, 18px, 28px, $black);
+      margin: 29px 0 32px;
+    }
+
+    &-icon {
+      position: absolute;
+      left: -5px;
+    }
+
+    &-car {
+      position: absolute;
+      left: -20px;
+    }
+  }
+
+  &__link {
+    @include text(400, 14px, 26px, $gray);
+  }
+
+  &__image {
+    width: 1203px;
+    height: 175px;
+    position: relative;
+    margin-top: 25px;
+
+    &-img {
+      width: 100%;
+      height: 100%;
+      background-image: url("../images/rentHomeBg.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      z-index: -3;
+    }
+
+    &::after {
+      content: '';
+      background: rgba(36, 35, 33, 0.53);
+      width: 1203px;
+      height: 175px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 0;
+    }
+  }
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+
+    &-titleFirst {
+      @include text(900, 30px, 40px, #fff);
+      padding: 48px 0 47px 42px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+
+    }
+
+    &-desc {
+      width: 477px;
+      height: 105px;
+      background: $blue;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 1;
+      margin: 37px 56px 33px 0;
+
+      &-text {
+        @include text(600, 16px, 26px, #fff);
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+        padding: 25px 30px 28px;
+      }
+    }
+  }
+
+}

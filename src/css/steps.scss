@@ -1,0 +1,52 @@
+.steps {
+  background: #F5F5F9;
+  margin-top: 101px;
+
+  &__title {
+    @include text(900, 30px, 45px, $black);
+
+    &-blue {
+      color: $blue;
+    }
+  }
+
+  &__desc {
+    @include text(500, 18px, 36px, $black);
+    margin: 15px 0 42px;
+  }
+
+  &__row {
+    display: flex;
+    column-gap: 30px;
+
+  }
+
+  &__rowBox {
+    width: calc(25% - 15px);
+
+    &-title {
+      @include text(900, 20px, 45px, $black);
+
+    }
+
+    &-text {
+      @include text(500, 16px, 30px, $black);
+      margin: 31px 0 16px;
+    }
+
+    &-tel {
+      @include text(900, 24px, 40px, $black);
+    }
+
+    &-btn {
+      background: $blue;
+      border: none;
+      border-radius: 10px;
+      text-align: center;
+      @include text(700, 16px, 26px, #fff);
+      letter-spacing: 0.05em;
+      padding: 15px 42px 19px 53px;
+      margin-top: 38px;
+    }
+  }
+}
